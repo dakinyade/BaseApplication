@@ -1,0 +1,13 @@
+package com.group.project.baseApplication;
+
+@RestController
+
+public class TestController{
+
+    @PostMapping (/order)
+    public String orderNow(@RequestBody Order order){
+
+
+    }
+
+}
