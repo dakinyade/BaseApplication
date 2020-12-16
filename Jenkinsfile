@@ -16,16 +16,16 @@ pipeline {
             
         }
         
-         stage("repo pulling") {
+            
+             stage("repo pulling") {
             
             steps {
-                sh "git pull"
+                sh "pwd"
                 echo "pulling from ${BRANCH_NAME}" 
                 echo "git commit ${GIT_COMMIT}"
-                echo "git committer name ${GIT_AUTHOR_EMAIL}"
-                echo "change author ${GIT_AUTHOR_NAME}"
             }
         }
+
         
         stage("build") {
              when {
