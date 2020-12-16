@@ -1,5 +1,7 @@
 def buildApp(){
-   echo 'building the application....'
+    
+                echo 'building the application'
+                echo "building new version ${NEW_VERSION}"
 }
 
 
