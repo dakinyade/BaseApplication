@@ -18,4 +18,16 @@ pipeline {
             }
         }
 }
+    post{
+        always{
+        //
+        }
+        sucess{
+        
+        }
+        
+        failure{
+        
+        }
+    }
 }
