@@ -12,6 +12,10 @@ pipeline {
                 }
             }
             steps {
+               //using groovey scripts scripts{
+                //
+                //}
+                
                 echo 'building the application'
                 echo "building new version ${NEW_VERSION}"
             }
