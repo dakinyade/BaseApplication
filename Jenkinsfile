@@ -1,3 +1,5 @@
+def gv
+
 pipeline {
     agent any
     environment{
@@ -5,6 +7,15 @@ pipeline {
     //SERVER_CREDENTIALS= credentials('fe9dbba0-1d43-4bc6-a276-0a23054590f5')   
     }
     stages {
+        stage("init"){
+            steps {
+                script {
+                gv = load "script.groovy"
+                }
+            }
+            
+        }
+        
         stage("build") {
              when {
                 expression {
@@ -12,12 +23,11 @@ pipeline {
                 }
             }
             steps {
-               //using groovey scripts scripts{
-                //
-                //}
-                
-                echo 'building the application'
-                echo "building new version ${NEW_VERSION}"
+               //using groovey scripts 
+                script{
+                        gv.buildApp();
+                        }
+    
             }
         }
         stage("test") {
