@@ -22,7 +22,7 @@ pipeline {
                 sh "git pull"
                 echo "pulling from ${BRANCH_NAME}" 
                 echo "git commit ${GIT_COMMIT}"
-                echo "git committer name ${GIT_COMMITTER_NAME}"
+                echo "git committer name ${GIT_AUTHOR_EMAIL}"
                 echo "change author ${GIT_AUTHOR_NAME}"
             }
         }
