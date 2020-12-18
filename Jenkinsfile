@@ -6,7 +6,7 @@ pipeline {
     NEW_VERSION = '1.3.0'
     //SERVER_CREDENTIALS= credentials('fe9dbba0-1d43-4bc6-a276-0a23054590f5')   
     }
-    triggers { cron('*/15 * * * *') }
+    //triggers { cron('*/15 * * * *') }
 
     stages {
         stage("init"){
