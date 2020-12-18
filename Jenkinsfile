@@ -12,6 +12,7 @@ pipeline {
                 script {
                 gv = load "script.groovy"
                 }
+                checkout scm
             }
             
         }
